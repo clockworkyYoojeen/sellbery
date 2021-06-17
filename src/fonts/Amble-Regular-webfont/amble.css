@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'ambleregular';
+    src: url('Amble-Regular-webfont.eot');
+    src: url('Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Amble-Regular-webfont.woff') format('woff'),
+         url('Amble-Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'amblelight';
+    src: url('Amble-Light-webfont.eot');
+    src: url('Amble-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Amble-Light-webfont.woff') format('woff'),
+         url('Amble-Light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'amblebold';
+    src: url('Amble-Bold-webfont.eot');
+    src: url('Amble-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Amble-Bold-webfont.woff') format('woff'),
+         url('Amble-Bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'amblelight_italic';
+    src: url('Amble-LightItalic-webfont.eot');
+    src: url('Amble-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Amble-LightItalic-webfont.woff') format('woff'),
+         url('Amble-LightItalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ambleitalic';
+    src: url('Amble-Italic-webfont.eot');
+    src: url('Amble-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Amble-Italic-webfont.woff') format('woff'),
+         url('Amble-Italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'amblebold_italic';
+    src: url('Amble-BoldItalic-webfont.eot');
+    src: url('Amble-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Amble-BoldItalic-webfont.woff') format('woff'),
+         url('Amble-BoldItalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'amblelight_condensed';
+    src: url('Amble-LightCondensed-webfont.eot');
+    src: url('Amble-LightCondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Amble-LightCondensed-webfont.woff') format('woff'),
+         url('Amble-LightCondensed-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'amblelight_condensed_italic';
+    src: url('Amble-LightCondensedItalic-webfont.eot');
+    src: url('Amble-LightCondensedItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Amble-LightCondensedItalic-webfont.woff') format('woff'),
+         url('Amble-LightCondensedItalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

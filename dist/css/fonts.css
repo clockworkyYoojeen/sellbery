@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'RalewayBold';
+  src: url("http://localhost:3000/../fonts/RalewayBold/RalewayBold.eot") format("eot"), url("http://localhost:3000/../fonts/RalewayBold/RalewayBold.woff") format("woff"), url("http://localhost:3000/../fonts/RalewayBold/RalewayBold.ttf") format("truetype");
+  font-style: normal;
+}
