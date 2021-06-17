@@ -1,0 +1,33 @@
+.header-top{
+    margin-top: 35px;
+    margin-bottom: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-top__links{
+    display: flex;
+}
+.header-top__link{
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.header-top__link--login{
+    font-weight: 500;
+}
+.header-top__link--cont i{
+    margin-left: 9px;
+}
+.header-top__btn{
+    padding: 4px 20px;
+    border: 2px solid #0062ff;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 15px;
+    font-weight: 900;
+}
