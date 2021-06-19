@@ -1,3 +1,44 @@
+.business {
+  padding-top: 78px;
+}
+
+.business__header {
+  max-width: 585px;
+  font-weight: 700;
+  line-height: 58px;
+  font-size: 50px;
+  color: #000;
+  margin-bottom: 22px;
+}
+
+.business__features-cont {
+  position: relative;
+}
+
+.business__features-row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3000px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.business__features-row p {
+  display: inline-block;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 58px;
+  font-size: 50px;
+  color: #dddddd;
+  margin-right: 50px;
+}
+
+.business__features-row p.inposition {
+  color: #AF399C;
+  border-bottom: 5px solid #AF399C;
+}
 @charset "UTF-8";
 
 .header-top {
