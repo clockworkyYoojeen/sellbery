@@ -72,7 +72,7 @@
 }
 /*** header-info ***/
 .header-info{
-
+    margin-bottom: 74px;
 }
 .header-info__title{
     font-weight: 900;
@@ -140,4 +140,35 @@
     border-color: #fff;
     background-image: url("img/check_box.png");
   }
+}
+
+/*** header button ***/
+.header-button{
+    max-width: 404px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.header-button__btn{
+    width: 100%;
+    border: none;
+    background-color: #0062FF;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-right: 38px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 8px;
+    margin-bottom: 21px;
+    background: url('img/smile.png') no-repeat right 79px center, #0062FF;
+}
+.header-button__text{
+    text-align: center;
+    font-family: 'Gochi Hand';
+    font-size: 29px;
+    color: #0062FF;
+    span{
+        color: #000;
+    }
 }

@@ -120,6 +120,11 @@
     margin-left: 18px;
     margin-right: 18px;
   }
+
+  .header-button__btn {
+    background: none;
+    background-color: #0062FF;
+  }
 }
 
 /* Custom, iPhone Retina */
