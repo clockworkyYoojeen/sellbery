@@ -11,6 +11,13 @@
 
 /* Medium Devices, Desktops */
 
+@media only screen and (max-width: 992px) {
+  .header-info__title {
+    font-size: 48px;
+    line-height: 62px;
+  }
+}
+
 @media only screen and (max-width: 960px) {
   .header-top {
     -webkit-box-orient: vertical;
@@ -48,6 +55,13 @@
 
 /* Small Devices, Tablets */
 
+@media only screen and (max-width: 768px) {
+  .header-info__title {
+    font-size: 42px;
+    line-height: 52px;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .header-top__links {
     -webkit-box-orient: vertical;
@@ -84,6 +98,18 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .header-info__title {
+    font-size: 36px;
+    line-height: 41px;
+  }
+
+  .header-info__checkbox-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
