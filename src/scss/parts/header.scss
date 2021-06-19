@@ -162,6 +162,28 @@
     border-radius: 8px;
     margin-bottom: 21px;
     background: url('img/smile.png') no-repeat right 79px center, #0062FF;
+    &:hover{
+        animation-name: shake;
+        animation-duration: .4s;
+    }
+}
+@keyframes shake{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(6deg);
+
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-6deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 .header-button__text{
     text-align: center;

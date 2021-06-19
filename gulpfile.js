@@ -14,7 +14,7 @@ let path = {
     src: { // пути для исходных файлов 
         // не включать в сборку html файлы, начинающиеся с символа подчёркивания (_header.html и т.п)
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
-        css: [source_folder + "/scss/reset.css", source_folder + "/scss/main.scss", source_folder + "/scss/media.scss", source_folder + "/scss/fonts.css"], // можно писать пути к нескольким файлам (в массиве)
+        css: [source_folder + "/scss/reset.css", source_folder + "/scss/main.scss", source_folder + "/scss/media.scss", source_folder + "/scss/fonts.css", source_folder + "/scss/modal.css"], // можно писать пути к нескольким файлам (в массиве)
         // css: source_folder + "/scss/*.{scss,css}",
         parts_css: source_folder + "/scss/parts/*.{scss,css}",
         js: source_folder + "/js/common.js",
