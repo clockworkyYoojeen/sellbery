@@ -27,24 +27,41 @@
 			@@include('_header.html')
 		</div>
 	</div>
-	<!-- MODAL WINDOW -->
+	<!-- MODAL WINDOW 1 -->
 	<!-- [1] -->
 	<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
 		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
-			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-				<div class="modal_border">
-					<img src="styles/img/modal/envelope_img.png" alt="message">
-					<h2 class="modal__title" id="modal-1-title">
-						Спасибо за ваше обращение
+			<div class="modal__container" role="dialog" aria-modal="true">
+				<div class="my-modal">
+					<h2>
+						Get in touch with us!
 					</h2>
-					<p class="modal__text">
-						мы свяжемся с вами в течение 10 минут
-					</p>
+					<p>Your name:</p>
+					<input type="text" placeholder="Enter your name">
+					<p>Your Email:</p>
+					<input type="text" placeholder="Enter email">
+					<button id="modal-send">Send</button>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- END MODAL WINDOW -->
+	<!-- END MODAL WINDOW 1 -->
+
+	<!-- MODAL WINDOW 2 -->
+	<!-- [2] -->
+	<div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true">
+				<div class="my-modal">
+					<h2>
+						Thank you!
+					</h2>
+					<p>Our manager will send you a message</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END MODAL WINDOW 2 -->
 	<!-- <script src="js/jquery-1.11.2.min.js"></script> -->
 	<!-- <script src="libs/animate/animate-css.js"></script> -->
 	<!-- <script src="js/waypoints.min.js"></script> -->

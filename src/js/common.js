@@ -1,14 +1,13 @@
 	// модальные окна
 	MicroModal.init({});
-	// $('.for_modal').click(function () {
-	// 	setTimeout(function () {
-	// 		MicroModal.close('modal-1')
-	// 	}, 3000)
-	// })
 
-    // const modalTrigger = document.querySelector('.header-button__btn')
-    // modalTrigger.addEventListener('click',function () {
-	// 	setTimeout(function () {
-	// 		MicroModal.close('modal-1')
-	// 	}, 3000)
-	// })
+    const modalClose = document.querySelector('#modal-send')
+    modalClose.addEventListener('click',function () {	
+			MicroModal.close('modal-1')
+			setTimeout(() => {
+				MicroModal.show('modal-2')
+				setTimeout(() => {
+					MicroModal.close('modal-2')
+				}, 2000)
+			},600)	
+	})
