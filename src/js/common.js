@@ -15,20 +15,37 @@
 	// перемещение блока
 	const featuresRow = document.querySelector('.business__features-row')
 	const features = document.querySelectorAll('.business__features-row p')
-	const leftEdge = features[0].getBoundingClientRect().left
+	let leftEdge = features[0].getBoundingClientRect().left
 	features[0].classList.add('inposition')
 
+	const slides = document.querySelectorAll('.business__features-slide')
+
 	for(let f of features){
-		let fLeftInit = f.getBoundingClientRect().left
-		f.dataset.initleft = fLeftInit
+		setLeftCoord(f)
 		f.addEventListener('click', moveRow)
+		f.addEventListener('click', moveSlide)
 	}
+
+	function setLeftCoord(item){
+		let fLeftInit = item.getBoundingClientRect().left
+		item.dataset.initleft = fLeftInit
+	}
+
+	window.addEventListener('resize', function(){
+		leftEdge = features[0].getBoundingClientRect().left
+		for(let f of features){
+			setLeftCoord(f)
+		}		
+	}, true)
 
 	function moveRow(e){
 		const elem = e.target
-		const leftCoord = parseInt(elem.dataset.initleft)
-		// console.log(coords);
-		const distance = leftCoord - leftEdge
+		// изначальное расстояние до левого края
+		const leftCoordInit = parseInt(elem.dataset.initleft)
+		
+		const leftCoordCurrent = elem.getBoundingClientRect().left
+		const distance = (leftCoordInit - leftEdge) + 1
+		console.log(distance);
 		featuresRow.style.transform = `translateX(-${distance}px)`
 
 		features.forEach((f) => {
@@ -36,4 +53,12 @@
 		})
 
 		elem.classList.add('inposition')
+	}
+
+	function moveSlide(e){
+		const choiceId = parseInt(e.target.dataset.index)
+		for (let i = 0; i < slides.length; i++) {
+			slides[i].classList.remove('show')
+		}
+		slides[choiceId].classList.add('show')
 	}
