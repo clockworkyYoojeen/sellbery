@@ -83,7 +83,7 @@ function css() {
             modify: function (url, filePath) {
                 return '' + url; // url - например img/header_bg.jpg, то что в пути в css файле
             },
-            prepend: 'http://localhost:3000/',//'https://fancycdn.com/',
+            prepend: 'https://sellbery.netlify.app/',//'https://fancycdn.com/',
             append: ''//'?cache-buster'        
         }))
         .pipe(dest(path.build.css))
