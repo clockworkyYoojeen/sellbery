@@ -382,7 +382,7 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background: url("http://localhost:3000/img/arrow_down.png") no-repeat center center;
+  background: url("https://sellbery.netlify.app/img/arrow_down.png") no-repeat center center;
 }
 
 .dropdown-menu {
@@ -458,7 +458,7 @@
   display: block;
   width: 18px;
   height: 17px;
-  background: url("http://localhost:3000/img/star.png") no-repeat center center;
+  background: url("https://sellbery.netlify.app/img/star.png") no-repeat center center;
   margin-left: 2px;
   margin-right: 2px;
 }
@@ -559,7 +559,7 @@
 
 .header-info__checkbox-item .custom-checkbox > input:checked + span::before {
   border-color: #fff;
-  background-image: url("http://localhost:3000/img/check_box.png");
+  background-image: url("https://sellbery.netlify.app/img/check_box.png");
 }
 
 /*** header button ***/
@@ -584,7 +584,7 @@
   font-weight: 900;
   border-radius: 8px;
   margin-bottom: 21px;
-  background: url("http://localhost:3000/img/smile.png") no-repeat right 79px center, #0062FF;
+  background: url("https://sellbery.netlify.app/img/smile.png") no-repeat right 79px center, #0062FF;
 }
 
 .header-button__btn:hover {
@@ -673,7 +673,7 @@
   padding-top: 7%;
   margin-left: auto;
   margin-right: auto;
-  background: url("http://localhost:3000/img/platforms/circle.png") no-repeat center center;
+  background: url("https://sellbery.netlify.app/img/platforms/circle.png") no-repeat center center;
   background-size: contain;
 }
 
@@ -769,7 +769,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: url("http://localhost:3000/img/platforms/ellipse.png") no-repeat center center;
+  background: url("https://sellbery.netlify.app/img/platforms/ellipse.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -782,7 +782,7 @@
   transform: translateX(-50%);
   width: 25px;
   height: 118px;
-  background: url("http://localhost:3000/img/line7.png") no-repeat center center;
+  background: url("https://sellbery.netlify.app/img/line7.png") no-repeat center center;
 }
 
 .unnecessary:before {

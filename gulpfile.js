@@ -110,7 +110,7 @@ function partsCss() {
             modify: function (url, filePath) {
                 return '' + url; // url - например img/header_bg.jpg, то что в пути в css файле
             },
-            prepend: 'http://localhost:3000/',//'https://fancycdn.com/',
+            prepend: 'https://sellbery.netlify.app/',//'https://fancycdn.com/',
             append: ''//'?cache-buster'        
         }))
         .pipe(concat_css("/bundle.css")) // путь относительно той папки, куда будут сливаться файлы (css/parts/) 
