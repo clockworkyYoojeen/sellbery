@@ -32,6 +32,12 @@
             color: #AF399C;
             border-bottom: 5px solid #AF399C;
         }
+        &:last-child{
+            position: relative;
+        }
+        &:last-child.inposition > #slider-back{
+            opacity: 0.9;
+        }
     }
 }
 
@@ -99,3 +105,16 @@
         width: 100%;
     }
 }
+#slider-back{
+    opacity: 0;
+    font-size: 22px;
+    color: #ddd;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(110%, -50%);
+    width: 200px;
+    height: 55px;
+    transition: opacity .8s;
+}
+

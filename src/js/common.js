@@ -8,13 +8,14 @@
 				MicroModal.show('modal-2')
 				setTimeout(() => {
 					MicroModal.close('modal-2')
-				}, 2000)
+				}, 1600)
 			},600)	
 	})
 
 	// перемещение блока
 	const featuresRow = document.querySelector('.business__features-row')
 	const features = document.querySelectorAll('.business__features-row p')
+	const toStart = document.querySelector('#slider-back')
 	let leftEdge = features[0].getBoundingClientRect().left
 	features[0].classList.add('inposition')
 
@@ -25,6 +26,8 @@
 		f.addEventListener('click', moveRow)
 		f.addEventListener('click', moveSlide)
 	}
+
+	toStart.addEventListener('click', moveToStart)
 
 	function setLeftCoord(item){
 		let fLeftInit = item.getBoundingClientRect().left
@@ -61,4 +64,14 @@
 			slides[i].classList.remove('show')
 		}
 		slides[choiceId].classList.add('show')
+	}
+
+	function moveToStart(e){
+		e.stopPropagation()
+		if(e.target.id === 'slider-back'){
+		featuresRow.style.transform = `translateX(${leftEdge}px)`
+		features[0].classList.add('inposition')
+		} else {
+			return
+		}
 	}

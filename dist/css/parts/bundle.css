@@ -129,6 +129,14 @@
   border-bottom: 5px solid #AF399C;
 }
 
+.business__features-row p:last-child {
+  position: relative;
+}
+
+.business__features-row p:last-child.inposition > #slider-back {
+  opacity: 0.9;
+}
+
 .business__features-slider {
   position: relative;
 }
@@ -217,6 +225,23 @@
 
 .business__feature-image img {
   width: 100%;
+}
+
+#slider-back {
+  opacity: 0;
+  font-size: 22px;
+  color: #ddd;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(110%, -50%);
+  -ms-transform: translate(110%, -50%);
+  transform: translate(110%, -50%);
+  width: 200px;
+  height: 55px;
+  -webkit-transition: opacity .8s;
+  -o-transition: opacity .8s;
+  transition: opacity .8s;
 }
 @charset "UTF-8";
 
