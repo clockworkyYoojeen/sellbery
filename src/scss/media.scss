@@ -52,13 +52,16 @@
         font-size: 35px;
         margin-right: 32px;
     }
-}
-@media only screen and (max-width : 900px) {
-    .advantages__row-item p{
-        font-size: 15px;
+    .markets{
+        padding-top: 80px;
+        padding-bottom: 110px;
     }
-    .advantages__row-item h4{
-        font-size: 20px;
+    .markets__center{
+        width: 200px;
+        height: 200px;
+        img{
+            width: 55%;
+        }
     }
 }
 @media only screen and (max-width : 960px) {
@@ -78,31 +81,45 @@
         order: 1;
         margin-bottom: 44px;
     }
-    @media only screen and (max-width : 830px) {
-        .advantages__row{
-            flex-direction: column;
-            align-items: center;
-            padding-left: 0;
-        }
-        .advantages__row-item--first{
-            text-align: center;
-            width: 90%;
-        }
-        .advantages__row-item--first h3{
-            max-width: 100%;
-            margin-bottom: 38px;
-        }
-        .advantages__row-item{
-            margin-bottom: 27px;
-        }
-        .advantages__row-item--last{
-            margin-right: 0;
-        }
-
-    }
-
 }
-
+@media only screen and (max-width : 900px) {
+    .advantages__row-item p{
+        font-size: 15px;
+    }
+    .advantages__row-item h4{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width : 860px) {
+    .markets__title{
+        font-size: 42px;
+        line-height: 45px;
+    }
+    .unnecessary{
+        display: none;
+    }
+}
+@media only screen and (max-width : 830px) {
+    .advantages__row{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    .advantages__row-item--first{
+        text-align: center;
+        width: 90%;
+    }
+    .advantages__row-item--first h3{
+        max-width: 100%;
+        margin-bottom: 38px;
+    }
+    .advantages__row-item{
+        margin-bottom: 27px;
+    }
+    .advantages__row-item--last{
+        margin-right: 0;
+    }
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
     .header-info__title{
@@ -116,6 +133,37 @@
     .slogan__title{
         font-size: 26px;
     }
+}
+
+@media only screen and (max-width : 750px) {
+.markets__container{
+    background: none;
+}
+.markets__center{
+    width: 120px;
+    height: 120px;
+}
+.markets__title{
+    font-size: 38px;
+    line-height: 41px;
+}
+.markets__carts-cont{
+    margin-bottom: 33px;
+}
+.markets__live-support{
+    h3{
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 50px;
+        margin-bottom: 22px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 24px;
+        width: 90%;
+        padding-bottom: 44px;
+    }
+}
 }
 
 @media only screen and (max-width : 650px){ 
@@ -132,6 +180,35 @@
     .header-stars__block{
         margin-bottom: 19px;
     }
+    .markets__center{
+        display: none;
+    }
+    .markets__container{
+        width: 90%;
+        padding-top: 0;
+    }
+    .markets__title{
+        margin-bottom: 44px;
+    }
+    .markets__carts--left{
+        img{
+            width: 70%;
+            &:last-child{
+                margin-left: 0;
+            }
+        }
+    }
+    .markets__carts--right{
+        img{
+            width: 70%;
+            &:nth-child(2){
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-left: 0;
+            }
+        }
+    }
 }
 @media only screen and (max-width : 550px){ 
     .header-top__links{
@@ -147,7 +224,23 @@
         flex-direction: column;
     }
 }
+@media only screen and (max-width : 500px){ 
+    .markets__carts-cont{
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .markets__carts{
+        text-align: center;
+        img{
+            width:initial;
+            margin-bottom: 36px;
+            &:last-child{
+                margin-bottom: 36px;
+            }
+        }
+    }
+}
 
 /* Extra Small Devices, Phones */
 
@@ -163,7 +256,10 @@
 }
 
 @media only screen and (max-width : 390px) {
-
+    .markets__title{
+        font-size: 31px;
+        line-height: 33px;
+    }
 }
 
 /* Custom, iPhone Retina */

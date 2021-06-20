@@ -9,7 +9,9 @@
     position: relative;
     &:hover > .cover{
         animation-name: runningshadow;
-        animation-duration: 1s;
+        animation-duration: .3s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
     }
 }
 @keyframes runningshadow{

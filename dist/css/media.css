@@ -58,15 +58,19 @@
     font-size: 35px;
     margin-right: 32px;
   }
-}
 
-@media only screen and (max-width: 900px) {
-  .advantages__row-item p {
-    font-size: 15px;
+  .markets {
+    padding-top: 80px;
+    padding-bottom: 110px;
   }
 
-  .advantages__row-item h4 {
-    font-size: 20px;
+  .markets__center {
+    width: 200px;
+    height: 200px;
+  }
+
+  .markets__center img {
+    width: 55%;
   }
 }
 
@@ -105,7 +109,28 @@
   }
 }
 
-@media only screen and (max-width: 960px) and (max-width: 830px) {
+@media only screen and (max-width: 900px) {
+  .advantages__row-item p {
+    font-size: 15px;
+  }
+
+  .advantages__row-item h4 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .markets__title {
+    font-size: 42px;
+    line-height: 45px;
+  }
+
+  .unnecessary {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 830px) {
   .advantages__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -154,6 +179,40 @@
   }
 }
 
+@media only screen and (max-width: 750px) {
+  .markets__container {
+    background: none;
+  }
+
+  .markets__center {
+    width: 120px;
+    height: 120px;
+  }
+
+  .markets__title {
+    font-size: 38px;
+    line-height: 41px;
+  }
+
+  .markets__carts-cont {
+    margin-bottom: 33px;
+  }
+
+  .markets__live-support h3 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 50px;
+    margin-bottom: 22px;
+  }
+
+  .markets__live-support p {
+    font-size: 18px;
+    line-height: 24px;
+    width: 90%;
+    padding-bottom: 44px;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .header-top__links {
     -webkit-box-orient: vertical;
@@ -178,6 +237,39 @@
 
   .header-stars__block {
     margin-bottom: 19px;
+  }
+
+  .markets__center {
+    display: none;
+  }
+
+  .markets__container {
+    width: 90%;
+    padding-top: 0;
+  }
+
+  .markets__title {
+    margin-bottom: 44px;
+  }
+
+  .markets__carts--left img {
+    width: 70%;
+  }
+
+  .markets__carts--left img:last-child {
+    margin-left: 0;
+  }
+
+  .markets__carts--right img {
+    width: 70%;
+  }
+
+  .markets__carts--right img:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .markets__carts--right img:last-child {
+    margin-left: 0;
   }
 }
 
@@ -205,6 +297,31 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .markets__carts-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .markets__carts {
+    text-align: center;
+  }
+
+  .markets__carts img {
+    width: initial;
+    margin-bottom: 36px;
+  }
+
+  .markets__carts img:last-child {
+    margin-bottom: 36px;
+  }
+}
+
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width: 460px) {
@@ -216,6 +333,13 @@
   .header-button__btn {
     background: none;
     background-color: #0062FF;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .markets__title {
+    font-size: 31px;
+    line-height: 33px;
   }
 }
 

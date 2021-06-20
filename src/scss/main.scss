@@ -17,6 +17,12 @@ a{
 }
 
 /**** custom modal styles ****/
+#modal-1{
+    z-index: 600;
+}
+#modal-2{
+    z-index: 600;
+}
 .my-modal{
     display: flex;
     flex-direction: column;
