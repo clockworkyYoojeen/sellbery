@@ -5,6 +5,48 @@
     justify-content: space-between;
     align-items: center;
 }
+.header-top__logo{
+    position: relative;
+    &:hover > .cover{
+        animation-name: runningshadow;
+        animation-duration: 1s;
+    }
+}
+@keyframes runningshadow{
+    0%{
+        opacity: .4;
+        left: -5px;
+        height: 2px;
+    }
+    25%{
+        opacity: .5;
+        height: 35px;
+    }
+    50%{
+        opacity: .8;
+        height: 55px;
+    }
+    50%{
+        opacity: .5;
+        height: 35px;
+    }
+    100%{
+        opacity: .4;
+        left: 150px;
+        height: 2px;
+    }
+}
+.header-top__logo .cover{
+    position: absolute;
+    width: 12px;
+    height: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -5px;
+    background-color: rgba(45, 124, 250, .7);
+    box-shadow: 4px 4px 9px #2d7cfa, -4px -4px 9px #0062FF;
+    opacity: 0;
+}
 .header-top__links{
     display: flex;
 }
@@ -19,8 +61,36 @@
 .header-top__link--login{
     font-weight: 500;
 }
-.header-top__link--cont i{
+.header-top__link--cont{
     margin-left: 9px;
+    padding-right: 18px;
+    position: relative;
+    &:after{
+        position: absolute;
+        content: "";
+        width: 11px;
+        height: 7px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url('img/arrow_down.png') no-repeat center center;
+    }
+}
+.dropdown-menu{
+    position: absolute;
+    width: 220px;
+    background-color: #E5E5E5;
+    padding: 18px;
+    border-radius: 9px;
+    transform: translateY(-10%);
+    opacity: 0;
+    transition: opacity .5s, transform .3s;
+    z-index: -1;
+}
+.header-top__link--cont:hover > .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 1;
 }
 .header-top__btn{
     padding: 4px 20px;

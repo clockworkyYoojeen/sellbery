@@ -1,6 +1,14 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1340px) {
+    .advantages__row-item--first h3:before{
+        display: none;
+    }
+    .advantages:before{
+        display: none;
+    }
+}
 @media only screen and (max-width : 1300px) {
     .wrapper{
         padding-left: 15px;
@@ -14,6 +22,7 @@
 @media only screen and (max-width : 1200px) {
 
 }
+
 @media only screen and (max-width : 1092px) {
     .business__features-row p{
         font-size: 38px;
@@ -44,6 +53,14 @@
         margin-right: 32px;
     }
 }
+@media only screen and (max-width : 900px) {
+    .advantages__row-item p{
+        font-size: 15px;
+    }
+    .advantages__row-item h4{
+        font-size: 20px;
+    }
+}
 @media only screen and (max-width : 960px) {
     .header-top{
         flex-direction: column;
@@ -61,6 +78,29 @@
         order: 1;
         margin-bottom: 44px;
     }
+    @media only screen and (max-width : 830px) {
+        .advantages__row{
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0;
+        }
+        .advantages__row-item--first{
+            text-align: center;
+            width: 90%;
+        }
+        .advantages__row-item--first h3{
+            max-width: 100%;
+            margin-bottom: 38px;
+        }
+        .advantages__row-item{
+            margin-bottom: 27px;
+        }
+        .advantages__row-item--last{
+            margin-right: 0;
+        }
+
+    }
+
 }
 
 /* Small Devices, Tablets */
@@ -72,6 +112,9 @@
     .business__features-row p{
         font-size: 26px;
         margin-right: 22px;
+    }
+    .slogan__title{
+        font-size: 26px;
     }
 }
 
