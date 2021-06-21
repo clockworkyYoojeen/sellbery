@@ -10,7 +10,7 @@
 			setTimeout(() => {
 				MicroModal.close('modal-1')
 				initTitle.innerText = initTitleText
-			}, 1500)
+			}, 1200)
 	})
 
 	// перемещение блока

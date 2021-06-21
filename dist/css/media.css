@@ -222,6 +222,14 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .header-top__links .header-top__link {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .header-stars {
@@ -270,6 +278,15 @@
 
   .markets__carts--right img:last-child {
     margin-left: 0;
+  }
+
+  .business {
+    display: none;
+  }
+
+  .slogan {
+    margin-top: 55px;
+    margin-bottom: 50px;
   }
 }
 

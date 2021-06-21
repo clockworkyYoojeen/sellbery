@@ -170,6 +170,11 @@
     .header-top__links{
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        .header-top__link{
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
     .header-stars{
         flex-direction: column;
@@ -208,6 +213,13 @@
                 margin-left: 0;
             }
         }
+    }
+    .business{
+        display: none;
+    }
+    .slogan{
+        margin-top: 55px;
+        margin-bottom: 50px;
     }
 }
 @media only screen and (max-width : 550px){ 
