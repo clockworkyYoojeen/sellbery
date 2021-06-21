@@ -8,7 +8,7 @@
 				MicroModal.show('modal-2')
 				setTimeout(() => {
 					MicroModal.close('modal-2')
-				}, 1600)
+				}, 5000)
 			},600)	
 	})
 
