@@ -2,14 +2,14 @@
 	MicroModal.init({});
 
     const modalClose = document.querySelector('#modal-send')
-    modalClose.addEventListener('click',function () {	
-			MicroModal.close('modal-1')
+    modalClose.addEventListener('click',function () {
+			const myModal = document.querySelector('.my-modal')
+			myModal.innerHTML = `<h2>Thank you!</h2><p>Our manager will send you a message</p>`	
 			setTimeout(() => {
-				MicroModal.show('modal-2')
-			},600)
-			setTimeout(() => {
-				MicroModal.close('modal-2')
-			}, 5000)	
+				MicroModal.close('modal-1')
+			}, 1500)
+			// MicroModal.close('modal-1')
+
 	})
 
 	// перемещение блока
