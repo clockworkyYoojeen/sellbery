@@ -15,7 +15,7 @@
     background: rgba(0,0,0,0.6);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     z-index: 500;
   }
   
@@ -28,6 +28,7 @@
     overflow-y: auto;
     box-sizing: border-box;
     z-index: 500;
+    margin-top: 22px;
   }
   
   .modal__header {
