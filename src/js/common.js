@@ -6,10 +6,10 @@
 			MicroModal.close('modal-1')
 			setTimeout(() => {
 				MicroModal.show('modal-2')
-				setTimeout(() => {
-					MicroModal.close('modal-2')
-				}, 5000)
-			},600)	
+			},600)
+			setTimeout(() => {
+				MicroModal.close('modal-2')
+			}, 5000)	
 	})
 
 	// перемещение блока
