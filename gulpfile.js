@@ -115,6 +115,11 @@ function partsCss() {
         }))
         .pipe(concat_css("/bundle.css")) // путь относительно той папки, куда будут сливаться файлы (css/parts/) 
         .pipe(dest(path.build.parts_css))
+        .pipe(clean_css())
+        .pipe(gulp_rename({
+            extname: ".min.css"
+        }))
+        .pipe(dest(path.build.css))
         .pipe(browsersync.stream())
 }
 // js
